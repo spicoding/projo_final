@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogIn"
+    >
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="129dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="132dp"
+        android:background="@drawable/edt_background"
+        android:src="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="383dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/app_logo"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="28dp"
+        android:autoText="false"
+        android:background="@drawable/edt_background"
+        android:fontFamily="@font/cambo"
+        android:hint="Email"
+        android:minHeight="48dp"
+        android:paddingStart="15dp"
+        android:textColorHint="#000000"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/edt_username"
+        android:layout_width="383dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/edt_email"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="28dp"
+        android:autoText="false"
+        android:background="@drawable/edt_background"
+        android:fontFamily="@font/cambo"
+        android:hint="Username"
+        android:minHeight="48dp"
+        android:paddingStart="15dp"
+        android:textColorHint="#000000"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="383dp"
+        android:layout_height="69dp"
+        android:layout_below="@id/edt_username"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginRight="28dp"
+        android:background="@drawable/edt_background"
+        android:fontFamily="@font/cambo"
+        android:hint="Password"
+        android:minHeight="48dp"
+        android:paddingStart="15dp"
+        android:textColorHint="#000000"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/conf_pass"
+        android:layout_width="383dp"
+        android:layout_height="69dp"
+        android:layout_below="@id/edt_password"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginRight="28dp"
+        android:background="@drawable/edt_background"
+        android:fontFamily="@font/cambo"
+        android:hint="ConfirmPassword"
+        android:minHeight="48dp"
+        android:paddingStart="15dp"
+        android:textColorHint="#000000"
+        tools:ignore="RtlSymmetry" />
+
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/conf_pass"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="158dp"
+        android:layout_marginTop="34dp"
+        android:background="@color/black"
+        android:fontFamily="@font/cambo"
+        android:hapticFeedbackEnabled="true"
+        android:shadowColor="@color/dark_grey"
+        android:text="Signup"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="119dp"
+        android:layout_marginTop="576dp"
+        android:layout_toRightOf="@id/btn_signup"
+        android:layout_below="@id/conf_pass"
+        android:background="@color/black"
+        android:fontFamily="@font/cambo"
+        android:hapticFeedbackEnabled="true"
+        android:shadowColor="@color/dark_grey"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        app:iconTint="#000000" />
+</RelativeLayout>

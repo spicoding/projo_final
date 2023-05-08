@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--view pager for displaying our slides-->
+    <androidx.viewpager.widget.ViewPager
+    android:id="@+id/idViewPager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
+    <!--on below line we are creating a simple linear layout-->
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal"
+    android:weightSum="5">
+
+    <View
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_weight="2" />
+
+    <!--adding linear layout for creating dots view-->
+    <LinearLayout
+    android:id="@+id/idLLDots"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_weight="1"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:weightSum="3">
+
+    <!--on below line we are creating a text view for displaying our dots-->
+    <TextView
+    android:id="@+id/idTVSlideOne"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="3dp"
+    android:layout_weight="1"
+    android:text="•"
+    android:textAlignment="center"
+    android:textColor="@color/white"
+    android:textSize="40sp"
+    android:textStyle="bold" />
+
+    <!--on below line we are creating a text view or displaying our dots-->
+    <TextView
+    android:id="@+id/idTVSlideTwo"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="3dp"
+    android:layout_weight="1"
+    android:text="•"
+    android:textAlignment="center"
+    android:textColor="@color/grey"
+    android:textSize="40sp"
+    android:textStyle="bold" />
+
+    <!--on below line we are creating a text view for displaying our dots-->
+    <TextView
+    android:id="@+id/idTVSlideThree"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="3dp"
+    android:layout_weight="1"
+    android:text="•"
+    android:textAlignment="center"
+    android:textColor="@color/grey"
+    android:textSize="40sp"
+    android:textStyle="bold" />
+    </LinearLayout>
+
+    <!--button for skipping our intro slider-->
+    <Button
+    android:id="@+id/idBtnSkip"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:layout_weight="2"
+    android:backgroundTint="@color/black"
+    android:padding="4dp"
+    android:text="Skip"
+    android:textAllCaps="false"
+    android:textColor="@color/white" />
+
+        </LinearLayout>
+    </RelativeLayout>
